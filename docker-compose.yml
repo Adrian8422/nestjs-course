@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: adri
+      POSTGRES_PASSWORD: adripassword
+      POSTGRES_DB: nestdb
+    ports:
+      - "5499:5432"
+    
